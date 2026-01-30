@@ -1,0 +1,41 @@
+===========================================================
+GUIDE D'EXECUTION DU PROJET
+===========================================================
+
+1. PREREQUIS TECHNIQUES
+-----------------------------------------------------------
+Le projet necessite Python 3 installé ainsi que les bibliotheques 
+suivantes :
+- pandas
+- geopandas
+- requests
+- openpyxl
+- calamine
+- mapclassify
+
+Commande d'installation :
+pip install pandas geopandas requests openpyxl calamine mapclassify
+
+2. LANCEMENT DU PIPELINE
+-----------------------------------------------------------
+L'ensemble du traitement est automatise par un script unique.
+Pour lancer la generation des donnees et de la visualisation, 
+executez la commande suivante dans le terminal :
+
+python run_project.py
+
+Ce script se charge d'executer sequentiellement :
+1. TransStops.py (Recuperation et traitement des arrets GTFS)
+2. Union.py (Fusion des sources et calcul du score)
+3. Visual1.py (Generation de la carte HTML)
+
+Note : La premiere etape peut prendre quelques minutes en raison 
+du telechargement et du traitement spatial des donnees.
+
+3. RESULTATS ATTENDUS
+-----------------------------------------------------------
+Une fois l'execution terminee, deux fichiers sont generes a la 
+racine du dossier :
+
+- population_revenu_transport.xlsx : Table de donnees consolidee.
+- carte_attractivite.html : Visualisation interactive des resultats.

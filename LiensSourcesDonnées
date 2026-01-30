@@ -1,0 +1,12 @@
+Liens des sources de données :
+
+- Population : https://www.insee.fr/fr/statistiques/6011070?sommaire=6011075 
+               (ensemble(3).xlsx)
+
+- Revenus : https://www.insee.fr/fr/statistiques/7756855?sommaire=7756859#consulter 
+            (Base niveau communes en 2021 - y compris arrondissements municipaux , FILO2021_DEC_COM.csv)
+
+- Transports : www.data.gouv.fr/datasets/arrets-de-transport-en-france/informations
+            (gtfs-stops-france-export-2026-01-13.csv)
+
+- Référentiel Géographique : [https://datavaccin-covid.ameli.fr/explore/dataset/georef-france-commune-arrondissement-municipal/information/?disjunctive.reg_name&disjunctive.dep_name&disjunctive.arrdep_name&disjunctive.ze2020_name&disjunctive.epci_name&disjunctive.ept_name&disjunctive.com_name&disjunctive.com_arm_name&disjunctive.ze2010_name&disjunctive.com_arm_is_mountain_area&disjunctive.bv2022_name](georef-france-commune-arrondissement-municipal)

@@ -1,0 +1,7 @@
+Ce dossier contient trois fichiers :
+
+- population_revenu_transport.xlsx est la table de données qui résulte de notre traitement des 4 sources de données.
+
+- carte_attractivite.html est la visualisation de nos données sous forme d'une carte de la France et de ses communes.
+
+- SchémaDonnées.png est le schéma UML de la table de données.
