@@ -1,9 +1,34 @@
-Ce dossier de rendu contient tous les livrables demandés :
+PROJET INGENIERIE DES DONNEES : INDICATEUR D'ATTRACTIVITE
+Groupe 1 - Polytech Paris-Saclay
 
-- Zip avec les fichiers de code (incluant les tables de données, car parmi elles se trouvaient des dossiers contenant plusieurs CSV).
+CONTENU DU DOSSIER DE RENDU :
 
-- Dossier livrables (table de données créée, visualisation(qui seras produite par le code fournie, enlevée du dossier livrables pour sa taille très large) et schéma UML).
+1. DOCUMENTATION
+   - Rapport_Projet1_IDD.pdf : Rapport technique complet (Méthodologie, Architecture, Analyse).
+   - LiensSourcesDonnées : Liste des URLs vers les sources Open Data utilisées.
 
-- Rapport de projet.
+2. RESULTATS (/livrables)
+   Ce dossier contient les fichiers finaux générés par le pipeline :
+   - population_revenu_transport.xlsx : La table de données consolidée et calculée.
+   - carte_attractivite.html : La visualisation interactive sous forme de carte.
+   - SchémaDonnées.png : Le diagramme UML de la structure de la base de données.
 
-- Liens vers les sources de données.
+3. CODE SOURCE ET DONNEES BRUTES (/Projet1_IDD_code)
+   Ce dossier contient l'environnement technique du projet :
+   
+   A. Scripts Python
+      - run_project.py : Orchestrateur principal (Lance tout le pipeline).
+      - TransStops.py : Module d'extraction et traitement spatial des transports.
+      - Union.py : Module de fusion des données et calcul des scores.
+      - VIsual1.py : Module de génération de la carte HTML.
+
+   B. Données Brutes (Input)
+      - ensemble.xlsx : Données de population INSEE.
+      - FILO2021_DEC_COM.xlsx : Données de revenus (Filosofi).
+      - gtfs-stops-france-export-2026-01-13.csv : Données d'arrêts de transport (PAN).
+
+INSTRUCTIONS D'EXECUTION RAPIDE :
+Pour reproduire les résultats, ouvrez un terminal dans le dossier 'Projet1_IDD_code' 
+et exécutez la commande suivante :
+
+python run_project.py
